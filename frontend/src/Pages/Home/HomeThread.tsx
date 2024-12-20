@@ -267,12 +267,13 @@ const HomeThread: React.FC<HomeThreadProps> = ({ thread }) => {
                         </button>
                     </div>
                 </div>
-
+                    
                 <button
                     onClick={handleOpenCommentModal}
-                    className="py-1 px-4 rounded-md border bg-gray-200 text-gray-700 hover:bg-green-500 hover:text-white"
+                    className="flex items-center space-x-4 py-1 px-4 rounded-md border 
+                    bg-gray-200 text-gray-700 hover:bg-green-500 hover:text-white"
                 >
-                    Comment
+                    Comment <p className="py-1 px-3">{stateThread.comments.length}</p>
                 </button>
             </div>
 
